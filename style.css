@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.game-btn {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game-btn:hover {
+  background-color: #fff;
+}
+
+.insects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.choose-insect-btn img {
+  width: 100px;
+  height: 100px;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.insect {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.insect img {
+  width: 100%;
+  height: 100%;
+}
